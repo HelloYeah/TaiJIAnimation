@@ -7,21 +7,35 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "TaiJi.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //添加太极视图
+    TaiJi * taiji = [[TaiJi alloc]init];
+    taiji.frame = CGRectMake(100, 200, 200, 200);
+    [self.view addSubview:taiji];
+    
+    //添加动画
+    [self addAnimationTo:taiji];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)addAnimationTo:(UIView *)view
+{
+    //基础动画
+    CABasicAnimation * anim = [CABasicAnimation animation];
+    anim.keyPath = @"transform.rotation";
+    anim.fromValue = @(M_PI);
+    anim.toValue = @(- M_PI);
+    anim.duration = 2.0;
+    anim.repeatCount = CGFLOAT_MAX;
+    
+    [view.layer addAnimation:anim forKey:nil];
 }
+
 
 @end

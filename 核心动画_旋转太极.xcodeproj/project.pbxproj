@@ -15,6 +15,8 @@
 		F8B069C81C9A63D000A3D376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B069C61C9A63D000A3D376 /* LaunchScreen.storyboard */; };
 		F8B069D31C9A63D000A3D376 /* _________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B069D21C9A63D000A3D376 /* _________Tests.m */; };
 		F8B069DE1C9A63D000A3D376 /* _________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B069DD1C9A63D000A3D376 /* _________UITests.m */; };
+		F8B069ED1C9A63FC00A3D376 /* TaiJi.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B069EC1C9A63FC00A3D376 /* TaiJi.m */; };
+		F8B069F21C9A7B0600A3D376 /* Objective-C.gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F8B069F11C9A7B0600A3D376 /* Objective-C.gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		F8B069D91C9A63D000A3D376 /* 核心动画_旋转太极UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "核心动画_旋转太极UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B069DD1C9A63D000A3D376 /* _________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_________UITests.m"; sourceTree = "<group>"; };
 		F8B069DF1C9A63D000A3D376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8B069EB1C9A63FC00A3D376 /* TaiJi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaiJi.h; sourceTree = "<group>"; };
+		F8B069EC1C9A63FC00A3D376 /* TaiJi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaiJi.m; sourceTree = "<group>"; };
+		F8B069F11C9A7B0600A3D376 /* Objective-C.gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Objective-C.gitignore"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		F8B069B71C9A63D000A3D376 /* 核心动画_旋转太极 */ = {
 			isa = PBXGroup;
 			children = (
+				F8B069EE1C9A640700A3D376 /* View */,
 				F8B069BB1C9A63D000A3D376 /* AppDelegate.h */,
 				F8B069BC1C9A63D000A3D376 /* AppDelegate.m */,
 				F8B069BE1C9A63D000A3D376 /* ViewController.h */,
@@ -117,6 +123,7 @@
 		F8B069B81C9A63D000A3D376 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F8B069F11C9A7B0600A3D376 /* Objective-C.gitignore */,
 				F8B069B91C9A63D000A3D376 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +145,15 @@
 				F8B069DF1C9A63D000A3D376 /* Info.plist */,
 			);
 			path = "核心动画_旋转太极UITests";
+			sourceTree = "<group>";
+		};
+		F8B069EE1C9A640700A3D376 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8B069EB1C9A63FC00A3D376 /* TaiJi.h */,
+				F8B069EC1C9A63FC00A3D376 /* TaiJi.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +264,7 @@
 			files = (
 				F8B069C81C9A63D000A3D376 /* LaunchScreen.storyboard in Resources */,
 				F8B069C51C9A63D000A3D376 /* Assets.xcassets in Resources */,
+				F8B069F21C9A7B0600A3D376 /* Objective-C.gitignore in Resources */,
 				F8B069C31C9A63D000A3D376 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +293,7 @@
 				F8B069C01C9A63D000A3D376 /* ViewController.m in Sources */,
 				F8B069BD1C9A63D000A3D376 /* AppDelegate.m in Sources */,
 				F8B069BA1C9A63D000A3D376 /* main.m in Sources */,
+				F8B069ED1C9A63FC00A3D376 /* TaiJi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
